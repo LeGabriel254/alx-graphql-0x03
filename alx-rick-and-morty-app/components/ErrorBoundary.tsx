@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import React from "react";
 
 interface State {
   hasError: boolean;
@@ -10,7 +11,8 @@ interface ErrorBoundaryProps {
 
 // Define the ErrorBoundary class component that extends React.Component.
 // It uses the ErrorBoundaryProps interface for props and the State interface for state.
-class ErrorBoundary extends React.Component<ErrorBoundaryProps , State> {
+class ErrorBoundary extends 
+React.Component<ErrorBoundaryProps , State> {
   // Constructor method initializes the component's state.
   constructor(props: ErrorBoundaryProps) {
     super(props);
